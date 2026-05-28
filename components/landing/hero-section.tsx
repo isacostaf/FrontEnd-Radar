@@ -18,27 +18,29 @@ export function HeroSection() {
         <AnimatedSphere />
       </div>
       
-      {/* Subtle grid lines */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+      {/* Subtle grid lines with Brazil colors */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
         {[...Array(8)].map((_, i) => (
           <div
             key={`h-${i}`}
-            className="absolute h-px bg-foreground/10"
+            className="absolute h-px"
             style={{
               top: `${12.5 * (i + 1)}%`,
               left: 0,
               right: 0,
+              background: i % 2 === 0 ? 'oklch(0.50 0.16 145 / 0.3)' : 'oklch(0.80 0.16 90 / 0.3)',
             }}
           />
         ))}
         {[...Array(12)].map((_, i) => (
           <div
             key={`v-${i}`}
-            className="absolute w-px bg-foreground/10"
+            className="absolute w-px"
             style={{
               left: `${8.33 * (i + 1)}%`,
               top: 0,
               bottom: 0,
+              background: i % 2 === 0 ? 'oklch(0.50 0.16 145 / 0.3)' : 'oklch(0.80 0.16 90 / 0.3)',
             }}
           />
         ))}
@@ -48,10 +50,13 @@ export function HeroSection() {
         {/* Main headline */}
         <div className="mb-16">
           <h1 
-            className={`text-[clamp(2.2rem,9.5vw,8rem)] font-bold leading-[0.9] tracking-tight transition-all duration-1000 text-black ${
+            className={`text-[clamp(2.2rem,9.5vw,8rem)] font-bold leading-[0.9] tracking-tight transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
-            style={{ fontFamily: 'var(--font-heading)' }}
+            style={{ 
+              fontFamily: 'var(--font-heading)',
+              color: 'oklch(0.25 0.08 145)'
+            }}
           >
             <span className="block">Radar Colegiados</span>
           </h1>
@@ -63,8 +68,11 @@ export function HeroSection() {
           }`}
         >
           <p
-            className="text-[lab(28_0_0)] text-lg md:text-2xl font-medium tracking-[0.2em] uppercase"
-            style={{ fontFamily: 'var(--font-heading)' }}
+            className="text-lg md:text-2xl font-medium tracking-[0.2em] uppercase"
+            style={{ 
+              fontFamily: 'var(--font-heading)',
+              color: 'oklch(0.40 0.10 145)'
+            }}
           >
             Ministério da Defesa
           </p>
