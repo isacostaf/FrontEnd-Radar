@@ -80,7 +80,7 @@ export function HeroSection() {
         >
           {/* CARD VERDE */}
           <a 
-            href="https://colegiados-md.vercel.app/"
+            href="https://radarcolegiados.vercel.app/ultimo-email"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex flex-col items-center justify-center gap-4 p-8 w-64 h-48 rounded-2xl border border-emerald-200 bg-gradient-to-br from-emerald-50 to-emerald-100/70 backdrop-blur-md transition-all duration-500 ease-out hover:scale-105 hover:border-emerald-300"
