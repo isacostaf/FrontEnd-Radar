@@ -127,7 +127,7 @@ export function HeroSection() {
 
           {/* CARD AMARELO */}
           <a 
-            href="https://colegiados-md.vercel.app/"
+            href="https://radarcolegiados.vercel.app/ultimo-email"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex flex-col items-center justify-center gap-4 p-8 w-64 h-48 rounded-2xl border border-amber-200 bg-gradient-to-br from-amber-50 to-yellow-100/70 backdrop-blur-md transition-all duration-500 ease-out hover:scale-105 hover:border-amber-300"
